@@ -1,0 +1,37 @@
+[paths]
+# Default Basalt processing layout. These paths are used by the CT reference
+# notebooks and do not assume that processed data are BagIt packages.
+data_root = "../data"
+ct_raw = "CT/raw"
+ct_processed = "CT/processed"
+ct_pretest_processed = "CT/pre-test/processed"
+ct_pretest_raw = "CT/pre-test/raw"
+ct_global_validation = "output/CT/global_registered"
+fluid_state = "fluid-state"
+resistance = "resistance"
+pump = "pump"
+output = "output"
+
+[amira]
+gzip_level = 4
+
+[registration]
+volume_key = "data_masked"
+reference_index = 0
+spacing_mode = "reference"
+affine_refine = true
+pad_mm = 2.0
+
+[pump]
+encoding = "ISO-8859-1"
+delimiter = "\t"
+
+[resistance]
+delimiter = ";"
+decimal = ","
+
+[porosity]
+porespace_h5 = "CT/pre-test/processed/20200275-CYL11159231-1500-100kV-200uA-025mmAg_with_foam(2)._data_masked_porespace.hdf5"
+cylinder_crop_h5 = "CT/pre-test/processed/data_cylinder_crop.hdf5"
+porespace_dataset = "data"
+mask_dataset = "cylinder_mask"

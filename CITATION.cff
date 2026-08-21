@@ -1,0 +1,41 @@
+cff-version: "1.2.0"
+message: "If you use these scripts, please cite the software using these metadata."
+title: 'Scripts used in "X-ray micro-computed tomography imaging and resistivity measurements of a basalt sample during core flooding"'
+abstract: >-
+  Processing scripts for basalt core-flooding X-ray micro-computed
+  tomography, pump, electrical-resistance, and permeability data.
+authors:
+  - family-names: Betlem
+    given-names: Peter
+    affiliation: "Norwegian Geotechnical Institute, Oslo, Norway; The University Centre in Svalbard, Longyearbyen, Norway"
+    email: peter.betlem@ngi.no
+  - family-names: Griffiths
+    given-names: Luke
+    affiliation: "Norwegian Geotechnical Institute, Oslo, Norway"
+  - family-names: Soldal
+    given-names: Magnus
+    affiliation: "Norwegian Geotechnical Institute, Oslo, Norway"
+  - family-names: Park
+    given-names: Joonsang
+    affiliation: "Norwegian Geotechnical Institute, Oslo, Norway"
+  - family-names: Faleide
+    given-names: Thea
+    affiliation: "Norwegian Geotechnical Institute, Oslo, Norway"
+  - family-names: Skurtveit
+    given-names: Elin
+    affiliation: "Norwegian Geotechnical Institute, Oslo, Norway; The University of Oslo, Oslo, Norway"
+contact:
+  - family-names: Betlem
+    given-names: Peter
+    affiliation: "Norwegian Geotechnical Institute, Oslo, Norway; The University Centre in Svalbard, Longyearbyen, Norway"
+    email: peter.betlem@ngi.no
+keywords:
+  - basalt
+  - carbon capture and storage
+  - core flooding
+  - electrical resistivity
+  - image processing
+  - X-ray micro-computed tomography
+license: EUPL-1.2
+repository-code: "https://github.com/PeterBetlem/basalt-processing-scripts"
+version: "0.1.0"

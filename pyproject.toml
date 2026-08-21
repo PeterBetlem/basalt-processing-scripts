@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "basalt-processing"
+version = "0.1.0"
+description = "Processing scripts for basalt core-flooding CT, pump, resistance, and permeability data"
+requires-python = ">=3.11"
+license = "EUPL-1.2"
+license-files = ["LICENSE", "LICENSES/*.txt", "THIRD_PARTY_NOTICES.md"]
+dependencies = [
+  "h5py>=3.10",
+  "ipykernel>=7.3.0",
+  "matplotlib>=3.7",
+  "numba>=0.59",
+  "numpy>=1.26",
+  "opencv-python-headless>=4.10",
+  "openpyxl>=3.1",
+  "pandas>=2.1",
+  "scikit-image>=0.22",
+  "scipy>=1.11",
+  "simpleitk>=2.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+viz = ["pyvista>=0.43"]
+
+[project.scripts]
+basalt-convert-amira = "basalt_processing.amira_hdf5:main"
+basalt-convert-hdf5-to-amira = "basalt_processing.hdf5_amira:main"
+basalt-register-global = "basalt_processing.registration:main"
+basalt-process-pump = "basalt_processing.pump:main"
+basalt-process-resistance = "basalt_processing.resistance:main"
+basalt-process-permeability = "basalt_processing.permeability:main"
+basalt-plot-timelines = "basalt_processing.plotting:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

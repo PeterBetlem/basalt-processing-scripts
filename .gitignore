@@ -1,0 +1,25 @@
+# Local Python environments and tooling caches
+.venv/
+.worktrees/
+.pytest_cache/
+.pytest-merged/
+.uv-cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter's local checkpoints
+.ipynb_checkpoints/
+
+# Generated analysis exports and intermediate data
+output/
+
+# Local agent planning artifacts
+.agents/
+docs/
+
+# Editor and operating-system metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
